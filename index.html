@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3.2: Formulieren</title>
+</head>
+<body>
+    <h1>TUI</h1>
+    <h2>Discover your smile</h2>
+    <form>
+        <label for="voornaam">Voornaam:</label><br>
+        <input type="text" id="voornaam" name="voornaam" pattern="[A-Za-z]+" title="Alleen letters toegestaan" required><br>
+
+        <label for="achternaam">Achternaam:</label><br>
+        <input type="text" id="achternaam" name="achternaam" pattern="[A-Za-z ]+" title="Alleen letters toegestaan" required><br>
+        
+        <label for="geslacht">Geslacht</label><br>
+        <select id="geslacht" name="geslacht">
+          <option value="man" selected>Man</option>
+          <option value="vrouw">Vrouw</option>
+          <option value="nietzeggen">Wil niet zeggen</option>
+        </select><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="stad">Stad:</label><br>
+        <input type="text" id="stad" name="stad" required><br>
+
+        <label for="land">Land:</label><br>
+        <input type="text" id="land" name="land" required><br>
+
+        <label for="straat">Straat:</label><br>
+        <input type="text" id="straat" name="straat" required><br>
+
+        <label for="huisnummer">Huisnummer:</label><br>
+        <input type="number" id="huisnummer" name="huisnummer" required><br>
+
+        <label for="datumvertrek">Datum vertrek:</label><br>
+        <input type="date" id="datumvertrek" name="datumvertrek" min="2023-09-14" required><br><br>
+
+        <label for="datumterug">Datum terugkomst (vul een maand in):</label><br>
+        <input type="month" id="datumterug" name="datumterug" min="2023-09" required><br><br>
+
+        <label for="reisgenoten">Aantal reisgenoten (max 4):</label><br>
+        <input type="number" id="reisgenoten" name="reisgenoten" min="0" max="4" required><br>
+
+        <label for="bsn">BSN-nummer (max 9 cijfers):</label><br>
+        <input type="text" id="bsn" name="bsn" pattern="[0-9]{1,9}" title="Maximaal 9 cijfers van 0-9" required><br>
+
+        <h3>Land van keuze:</h3>
+        <input type="radio" id="Duitsland" name="land" value="duitsland" default>
+        <label for="duitsland">Duitsland</label><br>
+        <input type="radio" id="Engeland" name="land" value="engeland">
+        <label for="engeland">Engeland</label><br>
+        <input type="radio" id="Japan" name="land" value="japan">
+        <label for="japan">Japan</label><br><br>
+
+        <label for="wachtwoord">Wachtwoord:</label><br>
+        <input type="password" id="wachtwoord" name="wachtwoord" required><br><br>
+
+        <input type="submit" value="Boek nu">
+    </form>
+</body>
+</html>
