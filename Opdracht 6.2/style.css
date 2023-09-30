@@ -1,0 +1,29 @@
+.style1 {
+    background-color: #052afc;
+    width: 200px;
+    height: 200px;
+}
+
+.style2 {
+    background-color: #000000;
+    width: 200px;
+    height: 200px;
+}
+
+.style3 {
+    background-color: #fc0505;
+    width: 200px;
+    height: 200px;
+}
+
+.style4 {
+    background-color: #098500;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
