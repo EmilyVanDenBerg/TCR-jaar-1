@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(193, 193, 193);
+}
+
+nav {
+    height: 5vh;
+    background-color: white;
+}
+
+main {
+    height: 95vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    flex: 0.25;
+}
+
+.login {
+    flex: 0.25;
+}
+
+li a {
+    display: block;
+    color: rgb(152, 214, 255);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.50;
+}
+
