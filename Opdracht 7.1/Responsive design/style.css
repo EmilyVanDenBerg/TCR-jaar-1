@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    font-size: 100%;
+    color: white;
+}
+h2 {
+    font-size: 60%;
+}
+body {
+    height: 100vh;
+}
+nav {
+    height: 10vh;
+    order: 1;
+}
+
+.mobileblock {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.boven {
+    height: 30vh;
+    order: 2;
+}
+.midden {
+    height: 30vh;
+    order: 3;
+}
+.onder {
+    height: 30vh;
+    order: 4;
+}
+
+@media (min-width: 1024px) {
+.mobileblock {
+    width: 0px;
+    height: 0px;
+}
+nav {
+    background-color:red;
+}
+.boven {
+    background-color: yellow;
+}
+.midden {
+    background-color: orange;
+}
+.onder {
+    background-color: green;
+}
+    }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+.mobileblock {
+    width: 0px;
+    height: 0px;
+}
+h2 {
+    color: white;
+}
+nav {
+    background-color: #fe8365;
+}
+.boven {
+    background-color: red;
+}
+.midden {
+    background-color: #b194ff;
+}
+.onder {
+    background-color: blue;
+}
+    }
+
+@media (max-width: 767px) {
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+nav {
+    background-color: blue;
+
+}
+.boven {
+    background-color: #c6e0f8;
+}
+.midden {
+    background-color: #fb94ff;
+}
+.onder {
+    background-color: rgb(79, 79, 126);
+}
+    }
